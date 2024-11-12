@@ -1,7 +1,3 @@
 <?php
-$maintenant = new DateTime();
-$avant = new DateTime("2024-09-01");
-
-$difference = $maintenant->diff($avant);
-
-var_dump($maintenant->add($difference));
+$maintenant = new DateTime('now', new DateTimeZone('Europe/Paris'));
+var_dump($maintenant->format('Y-m-d H:i:s'));
