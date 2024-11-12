@@ -1,4 +1,6 @@
 <?php
 $maintenant = new DateTime();
 
-var_dump($maintenant);
+$dateAffichable = $maintenant->format('d/m/Y');
+
+echo "Ce cours est dans le calendrier à la date du {$dateAffichable}.\n";
