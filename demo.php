@@ -2,4 +2,6 @@
 $maintenant = new DateTime();
 $avant = new DateTime("2024-09-01");
 
-var_dump($maintenant->diff($avant));
+$difference = $maintenant->diff($avant);
+
+var_dump($maintenant->add($difference));
