@@ -1,6 +1,5 @@
 <?php
 $maintenant = new DateTime();
+$avant = new DateTime("2024-09-01");
 
-$dateAffichable = $maintenant->format('d/m/Y');
-
-echo "Ce cours est dans le calendrier à la date du {$dateAffichable}.\n";
+var_dump($maintenant->diff($avant));
